@@ -1,0 +1,4 @@
+<div class="card" [ngStyle]="getEstilosCartao()">
+    <img src="https://randomuser.me/api/portraits/women/{{funcionario.id}}.jpg" class="card-img-top" alt="...">
+    <div><span class="badge" [ngClass]="{'badge-danger': isAdmin(), 'badge-primary' : !isAdmin()}">{{funcionario.nome}}</span></div>
+</div>
